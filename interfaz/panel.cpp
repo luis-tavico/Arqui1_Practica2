@@ -6,12 +6,12 @@
 Panel::Panel(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Panel)
-    , puntoX(400)
-    , puntoY(260)
+    , puntoX(500)
+    , puntoY(290)
 {
     ui->setupUi(this);
-    setMinimumSize(QSize(800, 550));
-    setMaximumSize(QSize(800, 550));
+    setMinimumSize(QSize(1000, 600));
+    setMaximumSize(QSize(1000, 600));
     setWindowTitle("AppDraw");
     // Llama a la función para mostrar el punto
     mostrarPunto();
@@ -24,7 +24,7 @@ Panel::~Panel()
 
 void Panel::mostrarPunto()
 {
-    QPixmap pixmap(800, 520);
+    QPixmap pixmap(1000, 580);
     pixmap.fill(Qt::black);
 
     // Crea un objeto QPainter para dibujar en la QPixmap
@@ -81,11 +81,21 @@ void Panel::keyPressEvent(QKeyEvent *event)
         return;
     }
 
+    // Imprimir los valores de las coordenadas
+    //imprimirCoordenadas();
+
     // Establece coordenadas dentro de los límites de la ventana
-    puntoX = qBound(0, puntoX, 790);
-    puntoY = qBound(0, puntoY, 510);
+    puntoX = qBound(0, puntoX, 990);
+    puntoY = qBound(0, puntoY, 570);
 
     if (btn_sel_presionado) {
+        // Verificar si existe interseccion
+        for (auto it = puntos.begin(); it != puntos.end(); ++it) {
+            if (it->x() == puntoX && it->y() == puntoY) {
+                qDebug() << "Interseccion";
+                break; // Terminar el bucle si se encuentra el valor
+            }
+        }
         // Agregar el nuevo punto al contenedor
         puntos.push_back(QPoint(puntoX, puntoY));
     }
@@ -96,23 +106,13 @@ void Panel::keyPressEvent(QKeyEvent *event)
 
 void Panel::imprimirCoordenadas()
 {
-    // Utilizar qDebug() para imprimir valores en la consola
-    //qDebug() << "Coordenadas del punto: (" << puntoX << ", " << puntoY << ")";
-    qDebug() << "Accediendo desde otra ventana";
+    qDebug() << "Coordenadas del punto: (" << puntoX << ", " << puntoY << ")";
 }
 
-void Panel::iniciar()
+void Panel::limpiar_valores()
 {
-    puntoX = 400;
-    puntoY = 260;
-    puntos.clear();
-    mostrarPunto();
-}
-
-void Panel::limpiar()
-{
-    puntoX = 400;
-    puntoY = 260;
+    puntoX = 500;
+    puntoY = 290;
     puntos.clear();
     mostrarPunto();
 }

@@ -25,7 +25,7 @@ Menu::~Menu()
 void Menu::on_btn1_iniciar_clicked()
 {
     close();
-    panel->iniciar();
+    panel->limpiar_valores();
 }
 
 
@@ -38,7 +38,7 @@ void Menu::on_btn2_volver_clicked()
 void Menu::on_btn4_limpiar_clicked()
 {
     close();
-    panel->limpiar();
+    panel->limpiar_valores();
 }
 
 

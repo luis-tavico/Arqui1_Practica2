@@ -22,8 +22,7 @@ class Panel : public QMainWindow
 public:
     Panel(QWidget *parent = nullptr);
     ~Panel();
-    void iniciar();
-    void limpiar();
+    void limpiar_valores();
     void imprimirCoordenadas();
 
 protected:
