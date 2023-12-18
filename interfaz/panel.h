@@ -9,6 +9,8 @@
 #include <QDebug>
 #include <QPoint>
 
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Panel;
@@ -24,9 +26,12 @@ public:
     ~Panel();
     void limpiar_valores();
     void imprimirCoordenadas();
+    //void setupSerial();
+    //void readSerialData();
+    void Prueba();
 
 protected:
-    // Manejo del evento de teclado
+    // Agregamos el manejo del evento de teclado
     void keyPressEvent(QKeyEvent *event);
 
 private:
@@ -35,6 +40,7 @@ private:
     // Variables para almacenar las coordenadas del punto
     int puntoX;
     int puntoY;
+    //int serial;
     bool btn_sel_presionado = false;
     QVector<QPoint> puntos;  // Declaración del contenedor de puntos
 
@@ -43,4 +49,4 @@ private:
     //void imprimirCoordenadas();
 };
 
-#endif // PANEL_H
+#endif // MAINWINDOW_H

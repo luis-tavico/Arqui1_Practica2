@@ -1,0 +1,9 @@
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/interfaz.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/interfaz_autogen_timestamp_deps.dir
+C:/Users/jmcan/Downloads/Arqui1_Practica2-main/Arqui1_Practica2-main/build-interfaz-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/interfaz_autogen.dir

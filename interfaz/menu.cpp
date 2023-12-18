@@ -35,12 +35,6 @@ void Menu::on_btn2_volver_clicked()
 }
 
 
-void Menu::on_btn3_vibrar_clicked()
-{
-
-}
-
-
 void Menu::on_btn4_limpiar_clicked()
 {
     close();
@@ -62,7 +56,7 @@ void Menu::on_btn5_acercade_clicked()
                        "202003220 - Marco Antonio Solis Gonzalez\n"
                        "201807411 - Pablo Daniel Fernandez Chacon\n"
                        "201907156 - Marcos Arnoldo Iztep Ixmay\n\n"
-                       "Esta aplicacion fue desarrollada en el IDE Visual Studio Code.");
+                       );
     messageBox.addButton(QMessageBox::Ok);
     messageBox.exec();
 }
@@ -72,4 +66,3 @@ void Menu::on_btn6_salir_clicked()
 {
     QApplication::quit();
 }
-
