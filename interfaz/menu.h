@@ -21,12 +21,13 @@ private slots:
 
     void on_btn2_volver_clicked();
 
+    void on_btn3_vibrar_clicked();
+
     void on_btn4_limpiar_clicked();
 
     void on_btn5_acercade_clicked();
 
     void on_btn6_salir_clicked();
-
 
 private:
     Ui::Menu *ui;

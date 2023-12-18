@@ -35,6 +35,12 @@ void Menu::on_btn2_volver_clicked()
 }
 
 
+void Menu::on_btn3_vibrar_clicked()
+{
+
+}
+
+
 void Menu::on_btn4_limpiar_clicked()
 {
     close();
@@ -66,3 +72,4 @@ void Menu::on_btn6_salir_clicked()
 {
     QApplication::quit();
 }
+

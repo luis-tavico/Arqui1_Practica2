@@ -26,7 +26,7 @@ public:
     void imprimirCoordenadas();
 
 protected:
-    // Agregamos el manejo del evento de teclado
+    // Manejo del evento de teclado
     void keyPressEvent(QKeyEvent *event);
 
 private:
@@ -43,4 +43,4 @@ private:
     //void imprimirCoordenadas();
 };
 
-#endif // MAINWINDOW_H
+#endif // PANEL_H
