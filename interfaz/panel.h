@@ -8,7 +8,7 @@
 #include <QKeyEvent>
 #include <QDebug>
 #include <QPoint>
-
+#include <QSerialPort>
 
 
 QT_BEGIN_NAMESPACE
@@ -26,13 +26,15 @@ public:
     ~Panel();
     void limpiar_valores();
     void imprimirCoordenadas();
-    //void setupSerial();
-    //void readSerialData();
-    void Prueba();
+    void setupSerial();
+    void readSerialData();
+    //void buscar_boton(const QString &boton_presionado);
 
 protected:
-    // Agregamos el manejo del evento de teclado
+    // Manejo del evento de teclado
     void keyPressEvent(QKeyEvent *event);
+    void buscar_boton(const QString &boton_presionado);
+
 
 private:
     Ui::Panel *ui;
@@ -40,7 +42,7 @@ private:
     // Variables para almacenar las coordenadas del punto
     int puntoX;
     int puntoY;
-    //int serial;
+    QSerialPort serial;
     bool btn_sel_presionado = false;
     QVector<QPoint> puntos;  // Declaración del contenedor de puntos
 
@@ -49,4 +51,4 @@ private:
     //void imprimirCoordenadas();
 };
 
-#endif // MAINWINDOW_H
+#endif // PANEL_H
